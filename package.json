@@ -1,0 +1,44 @@
+{
+    "name": "gitbook-plugin-tawk",
+    "description": "Tawk.to messaging for GitBook",
+    "version": "0.1.0",
+    "engines": {
+        "gitbook": ">=3.0.0-pre.0"
+    },
+    "homepage": "https://github.com/Sti3bas/gitbook-plugin-tawk",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sti3bas/gitbook-plugin-tawk.git"
+    },
+    "license": "Apache 2",
+    "bugs": {
+        "url": "https://github.com/Sti3bas/gitbook-plugin-tawk/issues"
+    },
+    "gitbook": {
+        "properties": {
+            "siteID": {
+                "type": "string",
+                "description": "Tawk.to site ID",
+                "required": true
+            },
+            "widgetID": {
+                "type": "string",
+                "description": "Tawk.to widget ID",
+                "required": false,
+                "default": "default"
+            },
+            "charset": {
+                "type": "string",
+                "description": "Tawk.to widget charset",
+                "required": false,
+                "default": "UTF-8"
+            },
+            "crossorigin": {
+                "type": "string",
+                "description": "Tawk.to widget crossorigin",
+                "required": false,
+                "default": "*"
+            }
+        }
+    }
+}
